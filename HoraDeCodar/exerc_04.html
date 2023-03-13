@@ -1,0 +1,99 @@
+<!-- Considerando a figura acima, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas.
+O usuário irá informar os valores de cada variável. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <script>
+//         a = 0, b = 0, c = 0;
+
+// a = parseInt(prompt("Digite o primeiro valor: "));
+// b = parseInt(prompt("Digite o segundo valor: "));
+// c = parseInt(prompt("Digite o terceiro valor: "));
+
+
+// if (a<b+c && b<a+c && c<a+b)
+// {
+//     if (a=b && b+c)
+//     {   
+//         window.alert("O triangulo é equilatero.")
+//     }
+//     else if (a==b || a==c || c==b)
+//     {
+//         window.alert("O triangulo e isosceles.")
+//     }
+//     else
+//     {
+//         window.alert("O triangulo e escaleno")
+//     }
+
+// }
+// else
+// {
+//     window.alert("As medidas nao formam um triangulo")
+// }
+    forma = parseInt(prompt("Qual forma você gostaria de calcular a área: [1] para RETÂNGULO; [2] para QUADRADO; [3] para LOSANGO; [4] para TRAPÉZIO; [5] para PARALELOGRAMO; [6] para TRIÂNGULO; [7] para CÍRCULO."));
+
+
+    if(forma == 1){
+        a = parseInt(prompt("Digite a base: "));
+        b = parseInt(prompt("Digite a altura: "));
+        c = a * b
+        window.alert("A área do retângulo é " + c)
+    }
+    
+    else if(forma == 2){
+        a = parseInt(prompt("Digite a base: "));
+        b = parseInt(prompt("Digite a altura: "));
+        c = a * b
+        window.alert("A área do quadrado é " + c)
+    }
+    
+    if(forma == 3){
+        a = parseInt(prompt("Digite a base: "));
+        b = parseInt(prompt("Digite a altura: "));
+        c = (a * b) / 2
+        window.alert("A área do losango é " + c)
+    }
+    
+    if(forma == 4){
+        a = parseInt(prompt("Digite a base maior: "));
+        b = parseInt(prompt("Digite a base menor: "));
+        c = parseInt(prompt("Digite a altura: "));
+        d = (a + b) * c
+        e = d / 2
+        window.alert("A área do trapézio é " + e)
+    }
+    
+    if(forma == 5){
+        a = parseInt(prompt("Digite  a base: "));
+        b = parseInt(prompt("Digite a altura: "));
+        c = a * b
+        window.alert("A área do pararelologramo é " + c)
+    }
+    
+    if(forma == 6){
+        a = parseInt(prompt("Digite o a base: "));
+        b = parseInt(prompt("Digite a altura: "));
+        c = (a * b) / 2
+        window.alert("A área do triângulo é " + c)
+    }
+    
+    if(forma == 7){
+        a = parseInt(prompt("Digite o raio: "));
+        c = (a * a) * 3.14
+        window.alert("A área do círculo é " + c)
+    }
+    
+    if(forma > 7){
+        window.alert("Forma inválida.")
+    }
+    
+    </script>
+</body>
+</html>
