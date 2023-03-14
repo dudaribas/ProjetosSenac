@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+	width: 100%;
+    height: 120px;
+	background-image: url(./imgs/pets.jpg);
+    background-position: center;
+	flex-direction: column;
+	position: relative;
+}
+nav  {
+	width: 100%;
+    height:60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.tata{
+    display: flex;
+    justify-content:center;
+    font-size: 36px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+    background-color: white;
+    border-radius:4px;
+}
+
+.botao{
+  border-color: #000000;
+  border-radius: 7px;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+  padding: 2px;
+}
+.botao:after{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.botao:hover{
+  color: #fff;
+}
+.botao:hover:after{
+  width: 110%;
+}
+
+
+a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+.cima a{
+    margin-top: 20px;
+}
+
+
+.home{
+    border-radius:4px;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding: 1px ;
+    border-width: 50px;
+    margin-left: 30px;
+    margin-right: 1820px;
+}
+
+.serv{
+    border-radius:4px;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding:  1px;
+    margin-left: 14px;
+}
+
+.atend{
+    border-radius:4px;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding:  1px;
+    margin-left:  13px;
+}
+
+.prod{
+    border-radius:4px;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding:  1px;
+    margin-left: 13px;
+}
+.faq{
+    border-radius:4px;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding:  1px;
+    margin-left: 13px;
+}
+
+footer{
+    width: 100%;
+    height: 105px;
+	background-image: url(./imgs/pets.jpg);
+    position: relative;
+}
+.tudo .redes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#servicos{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+.bicha{
+    margin-right: 20px;
+}
+
+.texto{
+  align-items: center;
+  text-align: center;
+  position: relative;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+    font-family: 'Alfa Slab One', cursive;
+    border-radius:4px;
+    text-align: center;
+    border: #000 solid 1px;
+    background-color: #000;
+    color: #fff;
+    margin: 7px 495px;
+}
+
+.textinho{
+    background-color: white;
+    border: ridge black;
+    text-align: center;
+    border-radius:8px;
+    padding: 0 150px 0 150px;
+}
+
+.atendi{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  border-bottom: #000000 1px dotted;
+  border-width: 2px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-left: 250px ;
+  margin-right: 250px;
+  margin-top: 50px;
+}
+
+
+
+.texxt{
+    font-size: x-small;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.mapa{
+    display:flex;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.mapa2{
+  padding-left: 50px;
+}
+
+.tutu{
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+.clinica{
+    text-align: center;
+    border: #000000 1px solid;
+    border-radius: 9px;
+    padding-bottom: 10px;
+    margin: 0px 30px 50px 50px;
+    width: 700px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.duds{
+    text-align: center;
+    margin:10px;
+}
+
+
+#id{
+    text-align: center;
+    justify-content: center;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.container .card {
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+.servis{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  border-bottom: #000000 1px dotted;
+  border-width: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 40px;
+  margin-right: 300px;
+  margin-left: 300px;
+  margin-bottom: 60px;
+}
+
+.btn.btn-secondary{
+    background-color: rgb(0, 0, 0);
+}
+
+.row{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ademir{
+  border-color: #000000;
+  border-radius: 0;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+  padding: 2px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.ademir::after{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.ademir:hover{
+  color: #fff;
+}
+.ademir:hover:after{
+  width: 110%;
+}
+
+.bi{
+border-radius: 50%;
+}
+
+.cards-list{
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 70px 390px;
+}
+.card {
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: -40px;
+  height: 40px;
+}
+#produtos{
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+.lala{
+  font-size: xx-small;
+  margin-top: -20px;
+}
+#sobrenos{
+  text-align: center;
+  margin-left:190px ;
+  margin-right:190px ;
+}
+.cardes{
+  border-radius: 5px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.nos{
+  border-radius: 5px 5px 0 0;
+  width: 160px;
+  height: 160px;
+  border: #000 1px solid;
+}
+.cardone{
+  border: #000 2px solid;
+  width: 250px;
+  height: 290px;
+  border-radius: 9px;
+  background-color: rgb(216, 221, 224);
+}
+.nome{
+  border-bottom: #000 0.5px dotted;
+  border-left: #000 0.5px dotted;
+  font: bol;
+  margin: 8px 23px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+}
+.info{
+  font-size: small;
+  margin: 10px 10px ;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* estilizacao do cadastro do animal */
+.tudo2{
+  text-align: center;
+  color: #000;
+  border: 1px double rgb(0, 0, 0);
+  margin: 20px 500px;
+  margin-top: 51px;
+  margin-bottom: 83px;
+}
+.opicio{
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10px 200px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dog{
+  background-color: #000;
+  padding: 5px;
+  border-radius: 10px;
+}
+.cat{
+  background-color: #000;
+  padding: 5px;
+  border-radius: 10px;
+}
+.ham{
+  background-color: #000;
+  padding: 5px;
+  border-radius: 10px;
+}
+.croc{
+  background-color: #000;
+  padding: 5px;
+  border-radius: 10px;
+}
+.bird  {
+  background-color: #000;
+  padding: 5px;
+  border-radius: 10px;
+}
+.sexo{
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10px 250px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+.fem{
+  background-color: #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+.mas{
+  background-color: #000;
+  padding: 10px;
+  border-radius: 10px ;
+}
+
+form{
+  margin-bottom: 80px;
+  position: relative;
+}
+
+label{
+  font-family:'Bebas Neue', cursive;
+  border-radius: 5px;
+}
+.infos{
+  border: none;
+  border-bottom: #000 double;
+  border-left: #000 double;
+  width: 200px;
+  font-size: 15px;
+}
+.linke{
+  color: #000;
+  margin-top: 15px;
+}
+.tudo3{
+  text-align: center;
+  color: #000;
+  border: 1px double rgb(0, 0, 0);
+  margin: 35px 400px 77px 400px;
+}
+.ademiro{
+    border-color: #000000;
+    border-radius: 0;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+    padding: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: medium;
+    margin-top: 20px;
+}
+  .ademiro::after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+  .ademiro:hover{
+    color: #fff;
+    background-color: black;
+}
+  .ademiro:hover:after{
+    width: 110%;
+}
+.text-end a{
+  text-decoration: none;
+}
+.tudo4{
+  text-align: center;
+  color: #000;
+  margin-top: 200px;
+  border: 1px double rgb(0, 0, 0);
+  margin: 20px 500px;
+  margin-top: 140px;
+  margin-bottom:214px;
+}
+.servis2{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  border-bottom: #000000 1px dotted;
+  border-radius: 5px;
+  border-width: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 70px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.tudo5{
+  text-align: center;
+  color: #000;
+  margin-top: 200px;
+  border: 1px double rgb(0, 0, 0);
+  margin: 150px 800px;
+  padding-top: 60px;
+  margin-bottom: 210px;
+}
+.tudo6{
+  text-align: center;
+  color: #000;
+  margin-top: 200px;
+  border: 1px double rgb(0, 0, 0);
+  margin: 52px 500px;
+  padding-top: 60px;
+  margin-bottom: 210px;
+}
+.linq{
+  margin-top: 20px;
+  justify-content: space-around;
+
+}
+.fabs{
+  text-align: center;
+  color: #000;
+  margin-top: 200px;
+  border: 1px double rgb(0, 0, 0);
+  margin: 52px 500px;
+  padding-top: 60px;
+  margin-bottom: 120px;
+}
