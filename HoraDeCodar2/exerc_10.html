@@ -1,0 +1,30 @@
+<!-- Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) 
+de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        sexo = String(prompt("Qual o seu sexo? Digite 'f' ou 'm'."))
+        altura = Number(prompt("Qual sua altura? "))
+        peso = Number(prompt("Qual seu peso? "))
+
+        if(sexo == 'f'){
+            ideal = (62.1 * altura) - 44.7
+            window.alert("Seu peso idela seria " + ideal + "quilos.")
+        }
+        else if(sexo == 'm'){
+            ideal = (72.7 * altura) - 58
+            window.alert("Seu peso idela seria " + ideal + "quilos.")
+        }
+        else{
+            window.alert("Gênero inválido.")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execício 03</title>
+</head>
+<body>
+    <script>
+        a = Number(prompt("Digite um número: "))
+        b = Number(prompt("Digite um segundo número: "))
+        c = Number(prompt("Digite um terceiro número: "))
+
+        if(a == b || a == c || b == c){
+            window.alert("Os 3 números têm que ser diferentes.")
+        }
+        else if(a > b && a > c){
+            window.alert("O " + a + " é o maior número.")
+        }
+        else if(b > a && b > c){
+            window.alert("O " + b + " é o maior número.")
+        }
+        else{
+            window.alert("O " + c + " é o maior número.")
+        }
+    </script>
+</body>
+</html>

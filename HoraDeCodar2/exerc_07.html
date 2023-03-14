@@ -1,0 +1,48 @@
+<!-- Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados.
+ Escreva o valor final da soma efetuada e também todos valores que o usuário informou.   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <script>
+        a = Number(prompt("Digite um número: "))
+        b = Number(prompt("Digite um segundo número: "))
+        c = Number(prompt("Digite um terceiro número: "))
+        d = Number(prompt("Digite um quarto número: "))
+        e = Number(prompt("Digite um quinto número: "))
+        f = Number(prompt("Digite um sexto número: "))
+        const numeros = []
+        let soma = 0
+
+        if(a < 72){
+            numeros.push(a)
+        }
+        if(b < 72){
+            numeros.push(b)
+        }
+        if(c < 72){
+            numeros.push(c)
+        }
+        if(d < 72){
+            numeros.push(d)
+        }
+        if(e < 72){
+            numeros.push(e)
+        }
+        if(f < 72){
+            numeros.push(f)
+        }
+        for(let i = 0; i < numeros.length; i++){
+            console.log(numeros[i])
+            soma += numeros[i]
+        }
+        window.alert("A soma dos números " + numeros + " é " + soma)
+    </script>
+</body>
+</html>
