@@ -1,0 +1,30 @@
+<!-- Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <script>
+        var resposta = 's';
+        while(resposta == 's'){
+        
+        num1 = Number(prompt("Qual a primeira nota? "))
+        num2 = Number(prompt("Qual a segunda nota? "))
+        media = (num1+ num2) / 2
+
+        if (media < 9.5){
+            window.alert("A média do aluno é " + media + ", portanto, não foi aprovado.") 
+        }
+        else{
+            window.alert("O aluno foi aprovado com média " + media)        
+        }
+        resposta = String(prompt("Quer continuar? s/n"))
+        
+    }
+    </script>
+</body>
+</html>

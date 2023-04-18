@@ -1,0 +1,32 @@
+<!-- Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos 
+  durante a leitura (0 a 10) para cada nota. São 6 notas ao total. -->
+<!-- Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Exercício 07</title>
+  </head>
+  <body>
+    <script>
+      var notas = [];
+      var soma = 0;
+
+      for (let i = 0; i < 6; i++) {
+        let nota = Number(prompt(`Insira a ${i + 1}º nota:`));
+        while(nota < 0 || nota > 10) {
+          nota = Number(prompt(`Digite números de 0-10: `));
+        }
+        notas.push(nota);
+      }
+      for (i = 0; i < notas.length; i++) {
+        soma += notas[i];
+      }
+      var media = soma / notas.length;
+      window.alert(media)
+
+    </script>
+  </body>
+</html>
