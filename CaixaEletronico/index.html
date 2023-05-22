@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa eletrônico</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite seu nome:");
+        let senha;
+
+    function inicio() {
+  senha = prompt("Digite sua senha:");
+
+  if (senha === "3589") {
+    window.alert('Ola, ${nome}, é um prazer ter você por aqui!');
+    exibirOpcoes();
+  } else {
+    window.alert("Acesso negado. Senha incorreta.");
+  }
+}
+
+function exibirOpcoes() {
+  window.alert("Opções disponíveis:");
+  window.alert("1. Saldo");
+  window.alert("2. Extrato");
+  window.alert("3. Saque");
+  window.alert("4. Depósito");
+  window.alert("5. Transferência");
+  window.alert("6. Sair");
+
+  selecionarOpcao();
+}
+
+function selecionarOpcao() {
+  let opcao = prompt("Selecione uma opção (1-6):");
+
+  switch (opcao) {
+    case "1":
+      saldo();
+      break;
+    case "2":
+      extrato();
+      break;
+    case "3":
+      saque();
+      break;
+    case "4":
+      deposito();
+      break;
+    case "5":
+      transferencia();
+      break;
+    case "6":
+      window.alert(`Tchau, ${nome}, foi um prazer ter você aqui!`);
+      break;
+    default:
+      window.alert("Opção inválida. Tente novamente.");
+      selecionarOpcao();
+      break;
+  }
+}
+
+function saldo() {
+  window.alert(`Seu saldo atual é de R$${saldoAtual}`);
+  exibirOpcoes();
+}
+
+function extrato() {
+  window.alert("Extrato:");
+  window.alert("Data: 01/05/2023 - Compra de R$500,00");
+  window.alert("Data: 15/05/2023 - Compra de R$30,00");
+  exibirOpcoes();
+}
+
+function saque() {
+  let valor = parseFloat(prompt("Digite o valor para saque:"));
+
+  if (valor <= saldoAtual) {
+    saldoAtual -= valor;
+    window.alert(`Saque de R$${valor} realizado com sucesso. Saldo atual: R$${saldoAtual}`);
+  } else {
+    window.alert("Operação não autorizada. Saldo insuficiente.");
+  }
+
+  exibirOpcoes();
+}
+
+function deposito() {
+  let valor = parseFloat(prompt("Digite o valor para depósito:"));
+
+  if (valor > 0) {
+    saldoAtual += valor;
+    window.alert(`Depósito de R$${valor} realizado com sucesso. Saldo atual: R$${saldoAtual}`);
+  } else {
+    window.alert("Valor inválido para depósito. Tente novamente.");
+  }
+
+  exibirOpcoes();
+}
+
+function transferencia() {
+  window.alert("Função de transferência não implementada.");
+  exibirOpcoes();
+}
+
+// Executar a função de início
+inicio();
+
+    </script>
+</body>
+</html>
